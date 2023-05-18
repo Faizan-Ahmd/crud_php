@@ -4,7 +4,7 @@
     box-sizing:border-box;
 }
 body{
-    background-color: #D071F9;
+    background-color: #00aeef;
     padding: 0 10px;
 }
 .container{
@@ -19,7 +19,7 @@ body{
     font-size:24px;
     font-weight: 700;
     margin:25px;
-    color:#D071F9;
+    color: #00aeef;
     text-transform: uppercase;
     text-align: center;
 }
@@ -35,4 +35,74 @@ body{
     width: 200px;
     margin-right:10px;
     font-size:14px;
+}
+.container .form .form_field .input,
+.container .form .form_field .textarea
+{
+    width: 100%;
+    outline: none;
+    border: 1px solid #00aeef;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.5 ease;
+}
+.container .form .form_field .textarea
+{
+    resize: none;
+    height: 70px;
+}
+.container .form .form_field .custom_select{
+    position: relative;
+    width: 100%;
+    height: 37px;
+}
+.container .form .form_field .custom_select select{
+    -webkit-appearance: none;
+    appearance:none;
+    width: 100%;
+    height: 100%;
+    padding: 8px 10px;
+    border: 1px solid #00aeef;
+    border-radius: 3px;
+    outline:none;
+}
+.container .form .form_field .custom_select:before{
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    border: 8px solid black;
+    border-color: #00aeef transparent transparent transparent;
+    pointer-events: none;
+}
+.container .form .form_field .input:focus,
+.container .form .form_field .textarea:focus,
+.container .form .form_field select:focus{
+    border: 1px solid purple;
+}
+.container .form .form_field p{
+    font-size: 14px;
+    color: #757575;
+}
+.container .form .form_field .check{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    display: block; 
+    cursor: pointer;
+}
+.container .form .form_field .check input[type="checkbox"]{
+    position: absolute;
+    top: 0; 
+    left: 0;
+}
+.container .form .form_field .check .checkmark{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #fec107;
+    display: block;
+    position: relative;
+    background: green;
+
 }

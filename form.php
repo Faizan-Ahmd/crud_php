@@ -30,11 +30,13 @@
             </div>
             <div class="form_field">
                 <label>Gender</label>
+                <div class="custom_select">
                <select>
                 <option>Select</option>
                 <option>Female</option>
                 <option>Male</option>
                </select>
+               </div>
                 
             </div> 
             <div class="form_field">
@@ -49,16 +51,15 @@
             </div>
             <div class="form_field">
                 <label>Address</label>
-                <textarea></textarea>
+                <textarea class="textarea"></textarea>
                 
             </div>    
             <div class="form_field">
                <label class="check">
                 <input type="checkbox"/>
                 <span class=checkmark"></span>
-                <p>Agree to terms and conditions</p>
                </label>
-                
+               <p>Agree to terms and conditions</p>
             </div>
             <div class="input_field">
                 <input type="submit" value="register" class="btn"/>
